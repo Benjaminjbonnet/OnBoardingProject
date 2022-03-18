@@ -1,0 +1,5 @@
+package com.onboarding.currencyexchange.controller;
+
+public class CurrencyExchangeController {
+
+}

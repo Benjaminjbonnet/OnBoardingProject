@@ -1,0 +1,12 @@
+package com.onboarding.limits.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class LimitsConfigurationController {
+
+	
+	public LimitsConfiguration getLimitsConfiguration() {
+		
+	}
+}

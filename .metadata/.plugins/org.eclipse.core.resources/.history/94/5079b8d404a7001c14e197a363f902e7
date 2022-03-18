@@ -1,0 +1,5 @@
+package com.onboarding.currencycalculation.model;
+
+public class CalculatedAmount {
+
+}

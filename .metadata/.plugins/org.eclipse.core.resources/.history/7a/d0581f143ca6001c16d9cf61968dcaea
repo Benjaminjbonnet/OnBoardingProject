@@ -1,0 +1,5 @@
+package com.onboarding.limits.controller;
+
+public class LimitsConfigurationController {
+
+}

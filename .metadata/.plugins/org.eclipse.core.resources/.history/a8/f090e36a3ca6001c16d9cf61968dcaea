@@ -1,0 +1,5 @@
+package com.onboarding.limits.bean;
+
+public class LimitsConfiguration {
+
+}

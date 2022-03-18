@@ -1,0 +1,15 @@
+package com.onboarding.limits.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.onboarding.limits.bean.LimitsConfiguration;
+
+@RestController
+public class LimitsConfigurationController {
+
+	
+	public LimitsConfiguration getLimitsConfiguration() {
+		
+		return new LimitsConfiguration(1000,99);
+	}
+}
