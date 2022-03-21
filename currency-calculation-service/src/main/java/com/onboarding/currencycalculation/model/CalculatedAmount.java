@@ -7,8 +7,8 @@ public class CalculatedAmount {
 		private Long id;
 		private String from;
 		private String to;
-		private BigDecimal multiplicationFactor;
-		private String quantity;
+		private BigDecimal conversionMultiple;
+		private BigDecimal quantity;
 		private BigDecimal TotalCalculatedAmount;
 		private int port;
 		
@@ -16,13 +16,13 @@ public class CalculatedAmount {
 			
 		}
 
-		public CalculatedAmount(Long id, String from, String to, BigDecimal multiplicationFactor, String quantity,
+		public CalculatedAmount(Long id, String from, String to, BigDecimal conversionMultiple, BigDecimal quantity,
 				BigDecimal totalCalculatedAmount, int port) {
 			super();
 			this.id = id;
 			this.from = from;
 			this.to = to;
-			this.multiplicationFactor = multiplicationFactor;
+			this.conversionMultiple = conversionMultiple;
 			this.quantity = quantity;
 			TotalCalculatedAmount = totalCalculatedAmount;
 			this.port = port;
@@ -52,19 +52,19 @@ public class CalculatedAmount {
 			this.to = to;
 		}
 
-		public BigDecimal getMultiplicationFactor() {
-			return multiplicationFactor;
+		public BigDecimal getConversionMultiple() {
+			return conversionMultiple;
 		}
 
-		public void setMultiplicationFactor(BigDecimal multiplicationFactor) {
-			this.multiplicationFactor = multiplicationFactor;
+		public void setConversionMultiple(BigDecimal conversionMultiple) {
+			this.conversionMultiple = conversionMultiple;
 		}
 
-		public String getQuantity() {
+		public BigDecimal getQuantity() {
 			return quantity;
 		}
 
-		public void setQuantity(String quantity) {
+		public void setQuantity(BigDecimal quantity) {
 			this.quantity = quantity;
 		}
 
@@ -86,9 +86,10 @@ public class CalculatedAmount {
 
 		@Override
 		public String toString() {
-			return "CalculatedAmount [id=" + id + ", from=" + from + ", to=" + to + ", multiplicationFactor="
-					+ multiplicationFactor + ", quantity=" + quantity + ", TotalCalculatedAmount="
-					+ TotalCalculatedAmount + ", port=" + port + "]";
+			return "CalculatedAmount [id=" + id + ", from=" + from + ", to=" + to + ", conversionMultiple="
+					+ conversionMultiple + ", quantity=" + quantity + ", TotalCalculatedAmount=" + TotalCalculatedAmount
+					+ ", port=" + port + "]";
 		}
+		
 		
 }

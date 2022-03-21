@@ -1,0 +1,9 @@
+
+*{
+    display: flex;
+}
+.background{
+    background-image: url("/img/pexels-tim-mossholder-2096622.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
